@@ -1,0 +1,13 @@
+button{
+    justify-self: center;
+    width: 80%;
+    background-color: rgb(59, 16, 16);
+    border:  none;
+    border-radius: 10px;
+    font-size: medium;
+    color:white;
+}
+.addToCartButton{
+    height: 30px;
+    margin-top: 10px;
+}

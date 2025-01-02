@@ -1,0 +1,33 @@
+.addToCartForm{
+    width: 150px;
+    display: grid;
+    justify-content: space-evenly;
+    align-items:center;
+    background-color: rgb(254, 254, 254);
+    padding: 10px;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    height: 70%;
+    border: 2px solid rgb(59, 16, 16);
+}
+.addToCartForm select {
+    appearance: none; /* Remove the default arrow */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+
+    padding: 5px; /* Add padding */
+    font-size: 16px; /* Font size */
+    background-color: rgb(59, 16, 16); /* Background color */
+  
+    cursor: pointer; 
+    border: none;
+     border-radius: 32px;
+     color:white;
+     font-weight: 800;
+     text-align: center;
+     margin-left: 10px;
+}
+
+.quantity-selector{
+    justify-self: unset;
+}
