@@ -1,0 +1,10 @@
+.meals{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(93, 92, 90);
+}
+.meals ul{
+    width: 70%;
+    list-style-type: none;
+}

@@ -1,8 +1,16 @@
+import Body from "./components/Body";
 import Header from "./components/Layout/Header";
+
+import { MealsContextProvider } from "./store/meals-context";
 
 function App() {
   return (
-    <Header></Header>
+    <MealsContextProvider>
+      <Header />
+      <Body />
+      
+    </MealsContextProvider>
+   
   );
 }
 

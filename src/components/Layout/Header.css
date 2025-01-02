@@ -36,28 +36,3 @@
     border-radius: 10px;
     font-weight:800;
 }
-.header-image{
-    height:300px;
-    background-color: rgb(93, 92, 90);
-    position: relative;
-}
-.header-image img {
-   height: 200px;
-   clip-path: polygon(0% 0, 100% 0%, 100% 70%, 0% 100%);
-  }
-.summary{
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 65%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%);
-    color:white;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-    text-align:center;
-    border-radius: 20px;
-  
-}
