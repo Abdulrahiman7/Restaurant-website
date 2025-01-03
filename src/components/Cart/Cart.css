@@ -1,0 +1,13 @@
+
+.total-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.actions{
+    display: flex;
+    justify-self: flex-end;
+}
+.actions button{
+    margin-left: 10px;
+}
