@@ -13,7 +13,7 @@ const Cart = (props) => {
             <h2>35.62</h2>
         </div>
         <div className="actions">
-            <Button>close</Button>
+            <Button onClick={props.closeModal}>close</Button>
             <Button>order</Button>
         </div>
 

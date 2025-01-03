@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import HeaderImage from "./HeaderImage";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <React.Fragment>
     <div className="header">
       <h2>React Meals</h2>
-      <button>
+      <button onClick={props.showCartModal}>
         <span>
           <FontAwesomeIcon icon={faCartShopping} />
         </span>
