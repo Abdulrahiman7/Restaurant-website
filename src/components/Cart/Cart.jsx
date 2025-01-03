@@ -1,24 +1,25 @@
-import React from 'react'
-import Modal from '../UI/Modal'
-import Button from '../UI/Button'
-import "./Cart.css"
+import React, { useContext } from "react";
+import Modal from "../UI/Modal";
+import Button from "../UI/Button";
+import "./Cart.css";
+import CartContext from "../../store/cart-context";
+import CartItem from "./CartItem";
 
 const Cart = (props) => {
-    
+  const { items, removeCartItem } = useContext(CartContext);
+
   return (
     <Modal>
-        <p>sushi</p>
-        <div className='total-price'>
-            <h2>Totol Price</h2>
-            <h2>35.62</h2>
+      {items.length > 0 ? (
+        items.map((item) => <CartItem key={item.id} item={item}/>)
+      ) : (
+        <div>
+          <p>no items in cart</p>
+          <Button onClick={props.closeModal}>close</Button>
         </div>
-        <div className="actions">
-            <Button onClick={props.closeModal}>close</Button>
-            <Button>order</Button>
-        </div>
-
+      )}
     </Modal>
-  )
-}
+  );
+};
 
-export default Cart
+export default Cart;
